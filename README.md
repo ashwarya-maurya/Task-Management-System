@@ -63,14 +63,14 @@ A comprehensive **Task Management Dashboard** designed to streamline workflows b
 ```plaintext
 📦 task-management-system
 ├── src
-│   ├── components      # Reusable UI components (Header, TaskCards, etc.)
-│   ├── context         # Auth and Task data management
-│   ├── dashboards      # Admin and Employee specific views
-│   ├── utils           # LocalStorage helpers and mock data
-│   ├── App.jsx         # Main routing logic
-│   └── main.jsx        # Entry point
-├── public              # Static assets
-└── tailwind.config.js  # Styling configurations
+│   ├── components
+│   │   └── Dashboard    
+│   ├── context         
+│   ├── utils
+│   │   └── LocalStorage          
+│   ├── App.jsx         
+│   └── main.jsx       
+└── public              
 ```
 
 ---
