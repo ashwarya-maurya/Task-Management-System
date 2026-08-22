@@ -2,17 +2,17 @@ import React from 'react'
 
 const FailedTask = ({data}) => {
   return (
-        <div className='p-5 h-80 w-80 bg-pink-500 rounded-2xl shrink-0 flex flex-col'>
-            <div className='flex items-center justify-between'>
-                <h3 className='bg-red-500 px-4 py-1 rounded text-sm'>{data.category}</h3>
-                <h4 className='text-xs'>{data.task_date}</h4>
+        <div className='flex min-h-80 w-[min(20rem,calc(100vw-2rem))] shrink-0 snap-start flex-col rounded-2xl bg-pink-500 p-4 sm:p-5'>
+            <div className='flex min-w-0 items-center justify-between gap-2'>
+                <h3 className='max-w-[65%] truncate rounded bg-red-500 px-3 py-1 text-sm sm:px-4'>{data.category}</h3>
+                <h4 className='shrink-0 text-xs'>{data.task_date}</h4>
             </div>
-            <h2 className='text-xl font-semibold mt-5 mb-1' >{data.task_title}</h2>
-            <div id='Task' className='overflow-y-auto'>
-                <p className='text-sm'>{data.task_description}</p>
+            <h2 className='mt-5 mb-1 break-words text-lg font-semibold sm:text-xl' >{data.task_title}</h2>
+            <div id='Task' className='min-h-0 flex-1 overflow-y-auto'>
+                <p className='break-words text-sm'>{data.task_description}</p>
             </div>
-            <div className='mt-5 w-full h-10'>
-                <h3 className='bg-red-700 text-center text-sm font-medium m-1 px-2 py-1 rounded'>Failed</h3>
+            <div className='mt-5 w-full'>
+                <h3 className='min-h-10 rounded bg-red-700 px-2 py-2 text-center text-sm font-medium'>Failed</h3>
             </div>
         </div>
   )

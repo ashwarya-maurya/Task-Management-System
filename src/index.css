@@ -1,8 +1,26 @@
 @import "tailwindcss";
 
+html {
+    min-width: 320px;
+    background-color: #111;
+}
+
 body{
+    min-width: 320px;
+    min-height: 100vh;
     background-color: #111;
     color: #fff;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
 }
 
 #Task::-webkit-scrollbar{
